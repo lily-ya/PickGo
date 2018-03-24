@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A8B3E962066BE51004EACE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B3E952066BE51004EACE3 /* GoogleService-Info.plist */; };
 		2AEF926A2061EE27000284F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF92692061EE27000284F4 /* AppDelegate.swift */; };
 		2AEF926C2061EE27000284F4 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF926B2061EE27000284F4 /* loginViewController.swift */; };
 		2AEF926F2061EE27000284F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AEF926D2061EE27000284F4 /* Main.storyboard */; };
@@ -19,6 +20,9 @@
 		2AEF929D206200C5000284F4 /* restaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF929C206200C5000284F4 /* restaurantTableViewCell.swift */; };
 		2AEF929F2062016E000284F4 /* restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF929E2062016E000284F4 /* restaurant.swift */; };
 		2AEF92A120620A7B000284F4 /* restaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF92A020620A7B000284F4 /* restaurantDetailViewController.swift */; };
+		34CB8B33A1D030931D16073D /* Pods_PickGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0361735A1D8A32210CA1F557 /* Pods_PickGo.framework */; };
+		36E71FA00D631C658F75B84F /* Pods_PickGoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79A8D61DB8F52686CFB315D /* Pods_PickGoUITests.framework */; };
+		822B4F518AD4AE0CA2A1CA93 /* Pods_PickGoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4F7CD11AC8629B0A9F0375 /* Pods_PickGoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0361735A1D8A32210CA1F557 /* Pods_PickGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17EC4FE145D6B2049E2CDA23 /* Pods-PickGoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickGoTests/Pods-PickGoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A8B3E952066BE51004EACE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2AEF92662061EE27000284F4 /* PickGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AEF92692061EE27000284F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AEF926B2061EE27000284F4 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +64,13 @@
 		2AEF929C206200C5000284F4 /* restaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantTableViewCell.swift; sourceTree = "<group>"; };
 		2AEF929E2062016E000284F4 /* restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurant.swift; sourceTree = "<group>"; };
 		2AEF92A020620A7B000284F4 /* restaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantDetailViewController.swift; sourceTree = "<group>"; };
+		57924E5625735C3E897BC346 /* Pods-PickGoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickGoUITests/Pods-PickGoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6F0A0346AF36FA6DD4E749A4 /* Pods-PickGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickGo/Pods-PickGo.release.xcconfig"; sourceTree = "<group>"; };
+		9F4F7CD11AC8629B0A9F0375 /* Pods_PickGoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickGoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDCFAB6C160514A90A4C2AC2 /* Pods-PickGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickGo/Pods-PickGo.debug.xcconfig"; sourceTree = "<group>"; };
+		CCF005B1B917E34E8836A0C2 /* Pods-PickGoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickGoTests/Pods-PickGoTests.release.xcconfig"; sourceTree = "<group>"; };
+		D79A8D61DB8F52686CFB315D /* Pods_PickGoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickGoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E21E0660E8145F218F250E9A /* Pods-PickGoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickGoUITests/Pods-PickGoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34CB8B33A1D030931D16073D /* Pods_PickGo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				822B4F518AD4AE0CA2A1CA93 /* Pods_PickGoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E71FA00D631C658F75B84F /* Pods_PickGoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		111CB624889A08B0C96EDB41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDCFAB6C160514A90A4C2AC2 /* Pods-PickGo.debug.xcconfig */,
+				6F0A0346AF36FA6DD4E749A4 /* Pods-PickGo.release.xcconfig */,
+				17EC4FE145D6B2049E2CDA23 /* Pods-PickGoTests.debug.xcconfig */,
+				CCF005B1B917E34E8836A0C2 /* Pods-PickGoTests.release.xcconfig */,
+				E21E0660E8145F218F250E9A /* Pods-PickGoUITests.debug.xcconfig */,
+				57924E5625735C3E897BC346 /* Pods-PickGoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		12ADA2BFEABD558E7D31672C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0361735A1D8A32210CA1F557 /* Pods_PickGo.framework */,
+				9F4F7CD11AC8629B0A9F0375 /* Pods_PickGoTests.framework */,
+				D79A8D61DB8F52686CFB315D /* Pods_PickGoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2AEF925D2061EE26000284F4 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +131,8 @@
 				2AEF92802061EE27000284F4 /* PickGoTests */,
 				2AEF928B2061EE27000284F4 /* PickGoUITests */,
 				2AEF92672061EE27000284F4 /* Products */,
+				111CB624889A08B0C96EDB41 /* Pods */,
+				12ADA2BFEABD558E7D31672C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +149,7 @@
 		2AEF92682061EE27000284F4 /* PickGo */ = {
 			isa = PBXGroup;
 			children = (
+				2A8B3E952066BE51004EACE3 /* GoogleService-Info.plist */,
 				2AEF92692061EE27000284F4 /* AppDelegate.swift */,
 				2AEF926B2061EE27000284F4 /* loginViewController.swift */,
 				2AEF926D2061EE27000284F4 /* Main.storyboard */,
@@ -147,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AEF92912061EE27000284F4 /* Build configuration list for PBXNativeTarget "PickGo" */;
 			buildPhases = (
+				091BDEF407637C063C89306E /* [CP] Check Pods Manifest.lock */,
 				2AEF92622061EE27000284F4 /* Sources */,
 				2AEF92632061EE27000284F4 /* Frameworks */,
 				2AEF92642061EE27000284F4 /* Resources */,
+				E44B117FA2FD8F8A7EC6BF20 /* [CP] Embed Pods Frameworks */,
+				1E5F10503F578B4B1904521E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AEF92942061EE27000284F4 /* Build configuration list for PBXNativeTarget "PickGoTests" */;
 			buildPhases = (
+				9814556A04960608C6ACFBE2 /* [CP] Check Pods Manifest.lock */,
 				2AEF92792061EE27000284F4 /* Sources */,
 				2AEF927A2061EE27000284F4 /* Frameworks */,
 				2AEF927B2061EE27000284F4 /* Resources */,
+				12EA6BEF52ACD9A1B595FCB4 /* [CP] Embed Pods Frameworks */,
+				2802540EC0AB8B115B4E61DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AEF92972061EE27000284F4 /* Build configuration list for PBXNativeTarget "PickGoUITests" */;
 			buildPhases = (
+				E9D46E44C172ED5CA50C0CE9 /* [CP] Check Pods Manifest.lock */,
 				2AEF92842061EE27000284F4 /* Sources */,
 				2AEF92852061EE27000284F4 /* Frameworks */,
 				2AEF92862061EE27000284F4 /* Resources */,
+				102DBE956CD30EAFD5C9BF5D /* [CP] Embed Pods Frameworks */,
+				EF305825E3DF280CC7EC1037 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AEF92772061EE27000284F4 /* LaunchScreen.storyboard in Resources */,
+				2A8B3E962066BE51004EACE3 /* GoogleService-Info.plist in Resources */,
 				2AEF92742061EE27000284F4 /* Assets.xcassets in Resources */,
 				2AEF926F2061EE27000284F4 /* Main.storyboard in Resources */,
 			);
@@ -268,6 +321,158 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		091BDEF407637C063C89306E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PickGo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		102DBE956CD30EAFD5C9BF5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PickGoUITests/Pods-PickGoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12EA6BEF52ACD9A1B595FCB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PickGoTests/Pods-PickGoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E5F10503F578B4B1904521E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PickGo/Pods-PickGo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2802540EC0AB8B115B4E61DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PickGoTests/Pods-PickGoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9814556A04960608C6ACFBE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PickGoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E44B117FA2FD8F8A7EC6BF20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PickGo/Pods-PickGo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PickGo/Pods-PickGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9D46E44C172ED5CA50C0CE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PickGoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF305825E3DF280CC7EC1037 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PickGoUITests/Pods-PickGoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2AEF92622061EE27000284F4 /* Sources */ = {
@@ -444,6 +649,7 @@
 		};
 		2AEF92922061EE27000284F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDCFAB6C160514A90A4C2AC2 /* Pods-PickGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +664,7 @@
 		};
 		2AEF92932061EE27000284F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F0A0346AF36FA6DD4E749A4 /* Pods-PickGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +679,7 @@
 		};
 		2AEF92952061EE27000284F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17EC4FE145D6B2049E2CDA23 /* Pods-PickGoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +696,7 @@
 		};
 		2AEF92962061EE27000284F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCF005B1B917E34E8836A0C2 /* Pods-PickGoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +713,7 @@
 		};
 		2AEF92982061EE27000284F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E21E0660E8145F218F250E9A /* Pods-PickGoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -519,6 +729,7 @@
 		};
 		2AEF92992061EE27000284F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57924E5625735C3E897BC346 /* Pods-PickGoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
