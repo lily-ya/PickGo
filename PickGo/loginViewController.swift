@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
@@ -40,7 +41,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func loginClicked(_ sender: UIButton) {
-        guard let userName = userName.text, !userName.isEmpty else {
+        guard let user = userName.text, !user.isEmpty else {
             errorMessage.text = "You must enter a value for user name!!"
             return
         }
@@ -49,6 +50,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
             errorMessage.text = "You must enter a value for password!!"
             return
         }
+        
+        Auth.auth().signIn(withEmail: user, password: password) { (user, error) in
+            //have some issue
+            if user == user {
+                self.performSegue(withIdentifier: "do_signin", sender: nil)
+            }
+        }
+
     }
 }
 

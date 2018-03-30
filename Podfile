@@ -4,9 +4,21 @@
 target 'PickGo' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
+
+  # Pods for PickGo
+ 
   pod 'Firebase/Core'
   pod 'Firebase/Database'
-  # Pods for PickGo
+  pod 'FirebaseUI'
+
+  pod 'FirebaseUI/Auth'
+  pod 'Firebase/Auth'
+  
+  pod 'FirebaseUI/Google'
+  pod 'FirebaseUI/Facebook'
+  pod 'FirebaseUI/Twitter'
+  pod 'FirebaseUI/Phone'
+
   
   target 'PickGoTests' do
     inherit! :search_paths

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4B0457EF80111D197B437177ED71B222"
+               BlueprintIdentifier = "5F2696E2196670AC11B8E441D82DF176"
                BuildableName = "Pods_PickGo.framework"
                BlueprintName = "Pods-PickGo"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4B0457EF80111D197B437177ED71B222"
+            BlueprintIdentifier = "5F2696E2196670AC11B8E441D82DF176"
             BuildableName = "Pods_PickGo.framework"
             BlueprintName = "Pods-PickGo"
             ReferencedContainer = "container:Pods.xcodeproj">
