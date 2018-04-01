@@ -70,11 +70,12 @@
                         <outlet property="errorMessage" destination="y5y-QM-geF" id="qeW-us-O4J"/>
                         <outlet property="password" destination="OmM-m9-yzt" id="2UC-tm-L47"/>
                         <outlet property="userName" destination="Hjb-I5-LTO" id="kkX-dF-HNi"/>
+                        <segue destination="lAf-Tw-WQ0" kind="show" identifier="do_signin" id="8u7-5U-e7D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="133.5832083958021"/>
+            <point key="canvasLocation" x="412" y="134"/>
         </scene>
         <!--Restaurant List Table View Controller-->
         <scene sceneID="ufB-az-ABy">

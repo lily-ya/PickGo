@@ -53,8 +53,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         Auth.auth().signIn(withEmail: user, password: password) { (user, error) in
             //have some issue
-            if user == user {
+            if error != nil {
+                self.errorMessage.text = "Your password is invalid !!"
+
+            } else {
                 self.performSegue(withIdentifier: "do_signin", sender: nil)
+                self.errorMessage.text = "Success !!"
             }
         }
 
