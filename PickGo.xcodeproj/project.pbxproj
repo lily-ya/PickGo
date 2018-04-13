@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2AAADF572066DABC00611B2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AAADF562066DABC00611B2A /* GoogleService-Info.plist */; };
 		2AEF926A2061EE27000284F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF92692061EE27000284F4 /* AppDelegate.swift */; };
 		2AEF926C2061EE27000284F4 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF926B2061EE27000284F4 /* loginViewController.swift */; };
 		2AEF926F2061EE27000284F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AEF926D2061EE27000284F4 /* Main.storyboard */; };
@@ -16,13 +15,20 @@
 		2AEF92772061EE27000284F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AEF92752061EE27000284F4 /* LaunchScreen.storyboard */; };
 		2AEF92822061EE27000284F4 /* PickGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF92812061EE27000284F4 /* PickGoTests.swift */; };
 		2AEF928D2061EE27000284F4 /* PickGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF928C2061EE27000284F4 /* PickGoUITests.swift */; };
-		2AEF929B2062009C000284F4 /* restaurantListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF929A2062009C000284F4 /* restaurantListTableViewController.swift */; };
-		2AEF929D206200C5000284F4 /* restaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF929C206200C5000284F4 /* restaurantTableViewCell.swift */; };
-		2AEF929F2062016E000284F4 /* restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF929E2062016E000284F4 /* restaurant.swift */; };
-		2AEF92A120620A7B000284F4 /* restaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF92A020620A7B000284F4 /* restaurantDetailViewController.swift */; };
+		2AEF929F2062016E000284F4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF929E2062016E000284F4 /* Item.swift */; };
 		34CB8B33A1D030931D16073D /* Pods_PickGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0361735A1D8A32210CA1F557 /* Pods_PickGo.framework */; };
 		36E71FA00D631C658F75B84F /* Pods_PickGoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79A8D61DB8F52686CFB315D /* Pods_PickGoUITests.framework */; };
 		822B4F518AD4AE0CA2A1CA93 /* Pods_PickGoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4F7CD11AC8629B0A9F0375 /* Pods_PickGoTests.framework */; };
+		B90EC3BA207FBB2900D0AC9A /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90EC3B9207FBB2900D0AC9A /* MenuTableViewCell.swift */; };
+		B90EC3BC207FE9D700D0AC9A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90EC3BB207FE9D700D0AC9A /* MenuViewController.swift */; };
+		B9A6E00E2072A98600AC47A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9A6E00D2072A98600AC47A6 /* GoogleService-Info.plist */; };
+		B9A6E0102072FB1C00AC47A6 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A6E00F2072FB1C00AC47A6 /* MyTabBarController.swift */; };
+		B9A6E0142074440500AC47A6 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A6E0132074440500AC47A6 /* MenuTableViewController.swift */; };
+		B9A6E016207460F000AC47A6 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A6E015207460F000AC47A6 /* DataStore.swift */; };
+		B9A6E0182076A1D400AC47A6 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A6E0172076A1D400AC47A6 /* CartTableViewController.swift */; };
+		B9A6E01A2076B11E00AC47A6 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A6E0192076B11E00AC47A6 /* OrderTableViewController.swift */; };
+		B9A6E01C2076B17E00AC47A6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A6E01B2076B17E00AC47A6 /* ProfileViewController.swift */; };
+		B9A6E01E2077063300AC47A6 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A6E01D2077063300AC47A6 /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +51,6 @@
 /* Begin PBXFileReference section */
 		0361735A1D8A32210CA1F557 /* Pods_PickGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17EC4FE145D6B2049E2CDA23 /* Pods-PickGoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickGoTests/Pods-PickGoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2AAADF562066DABC00611B2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2AEF92662061EE27000284F4 /* PickGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AEF92692061EE27000284F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AEF926B2061EE27000284F4 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
@@ -60,13 +65,20 @@
 		2AEF92882061EE27000284F4 /* PickGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AEF928C2061EE27000284F4 /* PickGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickGoUITests.swift; sourceTree = "<group>"; };
 		2AEF928E2061EE27000284F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2AEF929A2062009C000284F4 /* restaurantListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantListTableViewController.swift; sourceTree = "<group>"; };
-		2AEF929C206200C5000284F4 /* restaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantTableViewCell.swift; sourceTree = "<group>"; };
-		2AEF929E2062016E000284F4 /* restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurant.swift; sourceTree = "<group>"; };
-		2AEF92A020620A7B000284F4 /* restaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantDetailViewController.swift; sourceTree = "<group>"; };
+		2AEF929E2062016E000284F4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		57924E5625735C3E897BC346 /* Pods-PickGoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickGoUITests/Pods-PickGoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6F0A0346AF36FA6DD4E749A4 /* Pods-PickGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickGo/Pods-PickGo.release.xcconfig"; sourceTree = "<group>"; };
 		9F4F7CD11AC8629B0A9F0375 /* Pods_PickGoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickGoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90EC3B9207FBB2900D0AC9A /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		B90EC3BB207FE9D700D0AC9A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B9A6E00D2072A98600AC47A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B9A6E00F2072FB1C00AC47A6 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		B9A6E0132074440500AC47A6 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		B9A6E015207460F000AC47A6 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		B9A6E0172076A1D400AC47A6 /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		B9A6E0192076B11E00AC47A6 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
+		B9A6E01B2076B17E00AC47A6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B9A6E01D2077063300AC47A6 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		BDCFAB6C160514A90A4C2AC2 /* Pods-PickGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickGo/Pods-PickGo.debug.xcconfig"; sourceTree = "<group>"; };
 		CCF005B1B917E34E8836A0C2 /* Pods-PickGoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickGoTests/Pods-PickGoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D79A8D61DB8F52686CFB315D /* Pods_PickGoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickGoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,7 +161,7 @@
 		2AEF92682061EE27000284F4 /* PickGo */ = {
 			isa = PBXGroup;
 			children = (
-				2AAADF562066DABC00611B2A /* GoogleService-Info.plist */,
+				B9A6E00D2072A98600AC47A6 /* GoogleService-Info.plist */,
 				2AEF92692061EE27000284F4 /* AppDelegate.swift */,
 				2AEF926B2061EE27000284F4 /* loginViewController.swift */,
 				2AEF926D2061EE27000284F4 /* Main.storyboard */,
@@ -157,10 +169,16 @@
 				2AEF92752061EE27000284F4 /* LaunchScreen.storyboard */,
 				2AEF92782061EE27000284F4 /* Info.plist */,
 				2AEF92702061EE27000284F4 /* PickGo.xcdatamodeld */,
-				2AEF929A2062009C000284F4 /* restaurantListTableViewController.swift */,
-				2AEF929C206200C5000284F4 /* restaurantTableViewCell.swift */,
-				2AEF929E2062016E000284F4 /* restaurant.swift */,
-				2AEF92A020620A7B000284F4 /* restaurantDetailViewController.swift */,
+				2AEF929E2062016E000284F4 /* Item.swift */,
+				B9A6E00F2072FB1C00AC47A6 /* MyTabBarController.swift */,
+				B9A6E0132074440500AC47A6 /* MenuTableViewController.swift */,
+				B9A6E015207460F000AC47A6 /* DataStore.swift */,
+				B9A6E0172076A1D400AC47A6 /* CartTableViewController.swift */,
+				B9A6E0192076B11E00AC47A6 /* OrderTableViewController.swift */,
+				B9A6E01B2076B17E00AC47A6 /* ProfileViewController.swift */,
+				B9A6E01D2077063300AC47A6 /* AddItemViewController.swift */,
+				B90EC3B9207FBB2900D0AC9A /* MenuTableViewCell.swift */,
+				B90EC3BB207FE9D700D0AC9A /* MenuViewController.swift */,
 			);
 			path = PickGo;
 			sourceTree = "<group>";
@@ -300,7 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AEF92772061EE27000284F4 /* LaunchScreen.storyboard in Resources */,
-				2AAADF572066DABC00611B2A /* GoogleService-Info.plist in Resources */,
+				B9A6E00E2072A98600AC47A6 /* GoogleService-Info.plist in Resources */,
 				2AEF92742061EE27000284F4 /* Assets.xcassets in Resources */,
 				2AEF926F2061EE27000284F4 /* Main.storyboard in Resources */,
 			);
@@ -526,13 +544,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AEF929F2062016E000284F4 /* restaurant.swift in Sources */,
+				2AEF929F2062016E000284F4 /* Item.swift in Sources */,
+				B9A6E01A2076B11E00AC47A6 /* OrderTableViewController.swift in Sources */,
+				B90EC3BA207FBB2900D0AC9A /* MenuTableViewCell.swift in Sources */,
+				B9A6E01C2076B17E00AC47A6 /* ProfileViewController.swift in Sources */,
+				B9A6E0182076A1D400AC47A6 /* CartTableViewController.swift in Sources */,
+				B9A6E016207460F000AC47A6 /* DataStore.swift in Sources */,
+				B9A6E0102072FB1C00AC47A6 /* MyTabBarController.swift in Sources */,
+				B90EC3BC207FE9D700D0AC9A /* MenuViewController.swift in Sources */,
+				B9A6E0142074440500AC47A6 /* MenuTableViewController.swift in Sources */,
 				2AEF92722061EE27000284F4 /* PickGo.xcdatamodeld in Sources */,
 				2AEF926C2061EE27000284F4 /* loginViewController.swift in Sources */,
-				2AEF92A120620A7B000284F4 /* restaurantDetailViewController.swift in Sources */,
-				2AEF929D206200C5000284F4 /* restaurantTableViewCell.swift in Sources */,
-				2AEF929B2062009C000284F4 /* restaurantListTableViewController.swift in Sources */,
 				2AEF926A2061EE27000284F4 /* AppDelegate.swift in Sources */,
+				B9A6E01E2077063300AC47A6 /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

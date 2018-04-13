@@ -1,18 +1,19 @@
 //
-//  restaurantTableViewCell.swift
+//  MenuTableViewCell.swift
 //  PickGo
 //
-//  Created by Lily on 3/20/18.
+//  Created by WuYueyang on 4/12/18.
 //  Copyright © 2018 Lily. All rights reserved.
 //
 
 import UIKit
 
-class restaurantTableViewCell: UITableViewCell {
-    var restaurant: Restaurant? = nil
-    
+class MenuTableViewCell: UITableViewCell {
+
     @IBOutlet weak var lblName: UILabel!
-    @IBOutlet weak var lblRating: UILabel!
+    @IBOutlet weak var lblPrice: UILabel!
+    @IBOutlet weak var lblDescription: UILabel!
+    @IBOutlet weak var btnAdd: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

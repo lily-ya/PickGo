@@ -1,31 +1,19 @@
 //
-//  restaurantDetailViewController.swift
+//  ProfileViewController.swift
 //  PickGo
 //
-//  Created by Lily on 3/20/18.
+//  Created by WuYueyang on 4/5/18.
 //  Copyright © 2018 Lily. All rights reserved.
 //
 
 import UIKit
 
-class restaurantDetailViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
-    @IBOutlet weak var lblName: UILabel!
-    @IBOutlet weak var lblRating: UILabel!
-    @IBOutlet weak var lblAddress: UILabel!
-    @IBOutlet weak var lblPhoneNumber: UILabel!
-    
-    var restaurant:Restaurant?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = "Restaurant Detail"
-        lblName.text = restaurant!.name
-        lblRating.text = String(restaurant!.rating)
-        lblAddress.text = String(restaurant!.street)
-        lblPhoneNumber.text = restaurant!.phoneNumber
     }
 
     override func didReceiveMemoryWarning() {
