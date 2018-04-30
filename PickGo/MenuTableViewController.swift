@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class MenuTableViewController: UITableViewController {
     
@@ -24,7 +25,40 @@ class MenuTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func saveItem(name: String, price: String) {
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        // Create the entity we want to save
+        let entity =  NSEntityDescription.entity(forEntityName: "Cart", in: managedContext)
+        
+        let item = NSManagedObject(entity: entity!, insertInto:managedContext)
+        
+        // Set the attribute values
+        item.setValue(name, forKey: "name")
+        item.setValue(price, forKey: "price")
+    
+        // Commit the changes.
+        do {
+            try managedContext.save()
+        } catch {
+            // what to do if an error occurs?
+            let nserror = error as NSError
+            NSLog("Unresolved error \(nserror), \(nserror.userInfo)")
+            abort()
+        }
+    }
+    
+    @IBAction func addToCart(_ sender: UIButton) {
+        if let indexPath = self.tableView.indexPathForSelectedRow{
+            let item = DataStore.shared.getMenu(index: indexPath.row)
+            print("\(item.name)")
+            self.saveItem(name: item.name, price: item.price)
+        }
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -86,14 +120,18 @@ class MenuTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // Get the new view controller using segue.destinationViewController.
+//        // Pass the selected object to the new view controller.
+//        let data = cart
+//        if let cartTableViewController = segue.destination as? CartTableViewController {
+//            cartTableViewController.cart = data
+//        }
+//    }
+
 
 }

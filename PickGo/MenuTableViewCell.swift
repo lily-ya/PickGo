@@ -14,7 +14,7 @@ class MenuTableViewCell: UITableViewCell {
     @IBOutlet weak var lblPrice: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var btnAdd: UIButton!
-    
+    private var item:[Item] = []
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -25,5 +25,4 @@ class MenuTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }

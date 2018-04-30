@@ -6,19 +6,52 @@
 //  Copyright © 2018 Lily. All rights reserved.
 //
 
+import CoreData
 import UIKit
 
 class CartTableViewController: UITableViewController {
-
+    var cart = [NSManagedObject]()
+    @IBOutlet weak var totalPrice: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.reloadData()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        //
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName:"Cart")
+        
+        //
+        var fetchedResults:[NSManagedObject]? = nil
+        
+        do {
+            try fetchedResults = managedContext.fetch(fetchRequest) as? [NSManagedObject]
+        } catch {
+            // what to do if an error occurs?
+            let nserror = error as NSError
+            NSLog("Unresolved error \(nserror), \(nserror.userInfo)")
+            abort()
+        }
+        
+        if let results = fetchedResults {
+            cart = results
+        } else {
+            print("Could not fetch")
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -28,19 +61,28 @@ class CartTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return cart.count
     }
 
     
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath)
-//        return cell
-//    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cartItem", for: indexPath)
+        // Configure the cell...
+        let item = cart[indexPath.row]
+        
+        let n = (item.value(forKey: "name") as? String )!
+        let p = (item.value(forKey: "price") as? String )!
+        
+        cell.textLabel?.text = "\(n)"
+        cell.detailTextLabel?.text = "\(p)"
+        
+        return cell
+    }
  
 
     /*
