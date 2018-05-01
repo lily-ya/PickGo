@@ -266,7 +266,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="CYn-qJ-8Tb" kind="relationship" relationship="viewControllers" id="Kvt-Vs-QYk"/>
-                        <segue destination="kNG-XV-5tF" kind="relationship" relationship="viewControllers" id="7UF-lY-JDN"/>
+                        <segue destination="FH4-kP-tRl" kind="relationship" relationship="viewControllers" id="3ha-UO-vSi"/>
                         <segue destination="HQW-4F-ihe" kind="relationship" relationship="viewControllers" id="TOE-97-hJk"/>
                         <segue destination="L8I-hq-UfY" kind="relationship" relationship="viewControllers" id="6Fv-mu-eQh"/>
                     </connections>
@@ -365,29 +365,68 @@
             <point key="canvasLocation" x="1913" y="355"/>
         </scene>
         <!--Cart-->
-        <scene sceneID="Zi0-eN-h2o">
+        <scene sceneID="HdP-QM-Cw3">
             <objects>
-                <tableViewController id="kNG-XV-5tF" customClass="CartTableViewController" customModule="PickGo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iFW-1t-pAO">
+                <viewController id="FH4-kP-tRl" customClass="CartViewController" customModule="PickGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fyn-Rh-zUS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbz-tD-lTq">
+                                <rect key="frame" x="0.0" y="160" width="375" height="458"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="ytK-PE-wFQ" kind="embed" id="Q59-vx-zRY"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Order Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSe-Hx-kPU">
+                                <rect key="frame" x="16" y="106" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Calculated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQ7-Ik-gYM">
+                                <rect key="frame" x="166" y="106" width="123" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NkY-OS-T5J"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" id="9gb-2m-ooV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8b8-Xk-vh7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912.8" y="1030.4347826086957"/>
+        </scene>
+        <!--Cart Table View Controller-->
+        <scene sceneID="nMr-5n-dn9">
+            <objects>
+                <tableViewController id="ytK-PE-wFQ" customClass="CartTableViewController" customModule="PickGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kx0-JI-36O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="458"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cartItem" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartItem" textLabel="bqQ-bA-PYC" detailTextLabel="lji-t8-awh" style="IBUITableViewCellStyleValue1" id="9X9-n0-U0k">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartItem" textLabel="6MJ-Cu-5Xa" detailTextLabel="v7m-Jc-GcV" style="IBUITableViewCellStyleValue1" id="R3s-dd-7S8">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9X9-n0-U0k" id="3bS-gc-dZc">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R3s-dd-7S8" id="ph6-YM-YJO">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bqQ-bA-PYC">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6MJ-Cu-5Xa">
                                             <rect key="frame" x="16" y="12" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lji-t8-awh">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v7m-Jc-GcV">
                                             <rect key="frame" x="315" y="12" width="44" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -399,15 +438,14 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="kNG-XV-5tF" id="D0e-cy-2WA"/>
-                            <outlet property="delegate" destination="kNG-XV-5tF" id="LUE-qf-8pq"/>
+                            <outlet property="dataSource" destination="ytK-PE-wFQ" id="RxT-kM-v46"/>
+                            <outlet property="delegate" destination="ytK-PE-wFQ" id="MQU-qP-7aa"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Cart" image="cart" id="42q-9Y-1Ga"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4eZ-Uh-Pg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NtR-5E-Hjj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1909" y="1034"/>
+            <point key="canvasLocation" x="2650" y="936"/>
         </scene>
         <!--Order-->
         <scene sceneID="Q47-Dk-WKB">

@@ -11,11 +11,15 @@ import UIKit
 
 class CartTableViewController: UITableViewController {
     var cart = [NSManagedObject]()
+    private var pri:[Int] = []
+    var totalCalculated = 0
+
     @IBOutlet weak var totalPrice: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.reloadData()
+        calculateTotal()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -66,6 +70,9 @@ class CartTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        print("the count:")
+        print("\(cart.count)")
+        print("the count end")
         return cart.count
     }
 
@@ -74,16 +81,28 @@ class CartTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cartItem", for: indexPath)
         // Configure the cell...
         let item = cart[indexPath.row]
-        
         let n = (item.value(forKey: "name") as? String )!
         let p = (item.value(forKey: "price") as? String )!
-        
         cell.textLabel?.text = "\(n)"
         cell.detailTextLabel?.text = "\(p)"
-        
+//        print("\(p)")
+//        pri.append((p as NSString).integerValue)
+//        print("\(pri)")
         return cell
     }
- 
+    
+    private func calculateTotal(){
+        if cart.count > 0{
+        let index = cart.count-1
+        for i in 0...index{
+            let item = cart[i]
+            let p = (item.value(forKey: "price") as? String )!
+            let val = (p as NSString).integerValue
+            totalCalculated += val
+        }
+        print("\(totalCalculated)")
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

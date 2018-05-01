@@ -19,6 +19,7 @@
 		34CB8B33A1D030931D16073D /* Pods_PickGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0361735A1D8A32210CA1F557 /* Pods_PickGo.framework */; };
 		36E71FA00D631C658F75B84F /* Pods_PickGoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79A8D61DB8F52686CFB315D /* Pods_PickGoUITests.framework */; };
 		822B4F518AD4AE0CA2A1CA93 /* Pods_PickGoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4F7CD11AC8629B0A9F0375 /* Pods_PickGoTests.framework */; };
+		B90751242097DC8800496074 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90751232097DC8800496074 /* CartViewController.swift */; };
 		B90EC3BA207FBB2900D0AC9A /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90EC3B9207FBB2900D0AC9A /* MenuTableViewCell.swift */; };
 		B90EC3BC207FE9D700D0AC9A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90EC3BB207FE9D700D0AC9A /* MenuViewController.swift */; };
 		B9A6E00E2072A98600AC47A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9A6E00D2072A98600AC47A6 /* GoogleService-Info.plist */; };
@@ -69,6 +70,7 @@
 		57924E5625735C3E897BC346 /* Pods-PickGoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickGoUITests/Pods-PickGoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6F0A0346AF36FA6DD4E749A4 /* Pods-PickGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickGo/Pods-PickGo.release.xcconfig"; sourceTree = "<group>"; };
 		9F4F7CD11AC8629B0A9F0375 /* Pods_PickGoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickGoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90751232097DC8800496074 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		B90EC3B9207FBB2900D0AC9A /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		B90EC3BB207FE9D700D0AC9A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B9A6E00D2072A98600AC47A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				B9A6E01D2077063300AC47A6 /* AddItemViewController.swift */,
 				B90EC3B9207FBB2900D0AC9A /* MenuTableViewCell.swift */,
 				B90EC3BB207FE9D700D0AC9A /* MenuViewController.swift */,
+				B90751232097DC8800496074 /* CartViewController.swift */,
 			);
 			path = PickGo;
 			sourceTree = "<group>";
@@ -546,6 +549,7 @@
 			files = (
 				2AEF929F2062016E000284F4 /* Item.swift in Sources */,
 				B9A6E01A2076B11E00AC47A6 /* OrderTableViewController.swift in Sources */,
+				B90751242097DC8800496074 /* CartViewController.swift in Sources */,
 				B90EC3BA207FBB2900D0AC9A /* MenuTableViewCell.swift in Sources */,
 				B9A6E01C2076B17E00AC47A6 /* ProfileViewController.swift in Sources */,
 				B9A6E0182076A1D400AC47A6 /* CartTableViewController.swift in Sources */,
