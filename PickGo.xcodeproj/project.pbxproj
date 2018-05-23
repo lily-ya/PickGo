@@ -29,10 +29,10 @@
 		B9A6E01A2076B11E00AC47A6 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A6E0192076B11E00AC47A6 /* OrderTableViewController.swift */; };
 		B9A6E01C2076B17E00AC47A6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A6E01B2076B17E00AC47A6 /* ProfileViewController.swift */; };
 		B9A6E01E2077063300AC47A6 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A6E01D2077063300AC47A6 /* AddItemViewController.swift */; };
+		C4030EB320AE40C800D04C79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4030EB220AE40C800D04C79 /* GoogleService-Info.plist */; };
 		C4143A312099181700BA29AB /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4143A302099181700BA29AB /* StorageViewController.swift */; };
-		C4143A33209918EC00BA29AB /* foodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4143A32209918EC00BA29AB /* foodData.swift */; };
-		C4143A35209918FC00BA29AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4143A34209918FC00BA29AB /* GoogleService-Info.plist */; };
 		C4143A3720991BC500BA29AB /* StorageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4143A3620991BC500BA29AB /* StorageTableViewCell.swift */; };
+		C457494420B548F800E33327 /* foodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457494320B548F800E33327 /* foodData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,10 +84,10 @@
 		B9A6E01B2076B17E00AC47A6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B9A6E01D2077063300AC47A6 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		BDCFAB6C160514A90A4C2AC2 /* Pods-PickGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickGo/Pods-PickGo.debug.xcconfig"; sourceTree = "<group>"; };
+		C4030EB220AE40C800D04C79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/Spring 2018/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C4143A302099181700BA29AB /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
-		C4143A32209918EC00BA29AB /* foodData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = foodData.swift; path = "../../PickGo copy 2/PickGo/foodData.swift"; sourceTree = "<group>"; };
-		C4143A34209918FC00BA29AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C4143A3620991BC500BA29AB /* StorageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTableViewCell.swift; sourceTree = "<group>"; };
+		C457494320B548F800E33327 /* foodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodData.swift; sourceTree = "<group>"; };
 		CCF005B1B917E34E8836A0C2 /* Pods-PickGoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickGoTests/Pods-PickGoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D79A8D61DB8F52686CFB315D /* Pods_PickGoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickGoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21E0660E8145F218F250E9A /* Pods-PickGoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickGoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickGoUITests/Pods-PickGoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,11 +176,11 @@
 				C4143A302099181700BA29AB /* StorageViewController.swift */,
 				2AEF92732061EE27000284F4 /* Assets.xcassets */,
 				2AEF92752061EE27000284F4 /* LaunchScreen.storyboard */,
-				C4143A34209918FC00BA29AB /* GoogleService-Info.plist */,
+				C4030EB220AE40C800D04C79 /* GoogleService-Info.plist */,
 				2AEF92782061EE27000284F4 /* Info.plist */,
 				2AEF92702061EE27000284F4 /* PickGo.xcdatamodeld */,
 				2AEF929E2062016E000284F4 /* Item.swift */,
-				C4143A32209918EC00BA29AB /* foodData.swift */,
+				C457494320B548F800E33327 /* foodData.swift */,
 				B9A6E00F2072FB1C00AC47A6 /* MyTabBarController.swift */,
 				B9A6E0132074440500AC47A6 /* MenuTableViewController.swift */,
 				B9A6E015207460F000AC47A6 /* DataStore.swift */,
@@ -330,7 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AEF92772061EE27000284F4 /* LaunchScreen.storyboard in Resources */,
-				C4143A35209918FC00BA29AB /* GoogleService-Info.plist in Resources */,
+				C4030EB320AE40C800D04C79 /* GoogleService-Info.plist in Resources */,
 				2AEF92742061EE27000284F4 /* Assets.xcassets in Resources */,
 				2AEF926F2061EE27000284F4 /* Main.storyboard in Resources */,
 			);
@@ -568,7 +568,7 @@
 				C4143A312099181700BA29AB /* StorageViewController.swift in Sources */,
 				B90EC3BC207FE9D700D0AC9A /* MenuViewController.swift in Sources */,
 				B9A6E0142074440500AC47A6 /* MenuTableViewController.swift in Sources */,
-				C4143A33209918EC00BA29AB /* foodData.swift in Sources */,
+				C457494420B548F800E33327 /* foodData.swift in Sources */,
 				2AEF92722061EE27000284F4 /* PickGo.xcdatamodeld in Sources */,
 				2AEF926C2061EE27000284F4 /* loginViewController.swift in Sources */,
 				2AEF926A2061EE27000284F4 /* AppDelegate.swift in Sources */,
